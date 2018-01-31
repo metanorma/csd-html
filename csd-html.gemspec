@@ -6,21 +6,18 @@ require "csd/html/version"
 Gem::Specification.new do |spec|
   spec.name          = "csd-html"
   spec.version       = Csd::Html::VERSION
-  spec.authors       = ["Ronald Tse"]
-  spec.email         = ["ronald.tse@ribose.com"]
+  spec.authors       = ["Ribose Inc."]
+  spec.email         = ["open.source@ribose.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "csd-html lets you convert CSD XML into HTML."
+  spec.description   = <<~DESCRIPTION
+    csd-html lets you convert CSD XML into HTML.
 
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
+    This gem is in active development.
+  DESCRIPTION
+
+  spec.homepage      = "https://github.com/riboseinc/csd-html"
+  spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
